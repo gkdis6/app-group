@@ -31,17 +31,6 @@ def save_app_groups(app_groups):
     with open(CONFIG_FILE, 'w') as f:
         json.dump(app_groups, f, indent=2)
 
-def get_installed_applications():
-    """Gets a list of installed applications from /Applications and ~/Applications."""
-    app_paths = {} # Change to dictionary to store app_name: app_path
-    for app_dir in ["/Applications", os.path.expanduser("~/Applications")]:
-        if os.path.exists(app_dir):
-            for item in os.listdir(app_dir):
-                if item.endswith(".app"):
-                    app_name = item.replace(".app", "")
-                    app_paths[app_name] = os.path.join(app_dir, item)
-    return app_paths # Return dictionary
-
 def launch_applications(app_paths):
     """Launches a list of applications."""
     for app_path in app_paths:
