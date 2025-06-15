@@ -4,6 +4,8 @@
 # <xbar.version>v1.0</xbar.version>
 # <xbar.author>ParkSangYong</xbar.author>
 # <xbar.author.github>gkdis6</xbar.author.github>
+# <xbar.github>https://github.com/gkdis6/app-group</xbar.github>
+# <xbar.image>https://github.com/gkdis6/app-group/images/app-group-management.png</xbar.image>
 # <xbar.desc>Launch predefined groups of applications. Allows easy configuration of app groups.</xbar.desc>
 # <xbar.dependencies>python3</xbar.dependencies>
 
